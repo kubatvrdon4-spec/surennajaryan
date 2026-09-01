@@ -190,17 +190,23 @@
   .sn-meal .meal-hero h1 { font-size: clamp(52px, 14vw, 70px); }
   .sn-meal .meal-lead { margin-top: 18px; font-size: 20px; }
   .sn-meal .meal-body { margin-top: 14px; font-size: 14px; line-height: 1.65; }
+  .sn-meal .meal-hero-copy > .meal-body,
+  .sn-meal .meal-hero-signature { display: none; }
   .sn-meal .meal-button { min-height: 54px; margin-top: 22px; }
   .sn-meal .meal-hero-signature { margin-top: 18px; }
   .sn-meal .meal-hero-visual { height: 330px; }
 
-  .sn-meal .meal-goals,
-  .sn-meal .meal-faq { gap: 24px; padding-block: 44px; }
+  .sn-meal .meal-goals { display: none; }
+  .sn-meal .meal-faq { gap: 24px; padding-block: 40px; }
   .sn-meal .meal-goal-options { gap: 18px; }
   .sn-meal .meal-goal-card { padding: 24px 20px; }
   .sn-meal .meal-fit-inner { gap: 24px; padding-block: 32px; }
   .sn-meal .meal-prep-visual { height: min(65vw, 300px); }
-  .sn-meal .meal-fit-points { margin-top: 22px; }
+  .sn-meal .meal-fit-copy > .meal-body,
+  .sn-meal .meal-fit-points p,
+  .sn-meal .meal-faq-heading > .meal-body { display: none; }
+  .sn-meal .meal-fit-points { margin-top: 18px; }
+  .sn-meal .meal-fit-points > div { padding-block: 13px; }
 
   .sn-meal .meal-faq summary { min-height: 64px; padding-block: 14px; line-height: 1.4; }
   .sn-meal .meal-faq details > p { margin: 0 36px 20px 0; font-size: 13px; line-height: 1.65; }
@@ -219,3 +225,4 @@
 @media (prefers-reduced-motion: reduce) {
   .sn-meal *, .sn-meal *::before, .sn-meal *::after { transition: none !important; scroll-behavior: auto !important; }
 }
+

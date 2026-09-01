@@ -15,6 +15,7 @@ export function TrainingPage() {
     <Seo title="Moje služby — osobní tréninky" description="Osobní trénink, redukce, kondice a budování síly se Surenem Najaryanem ve Form Factory Vinohradská, Praha 3." path="/osobni-treninky" image="/images/movement-1440.webp" />
     <InteriorHero eyebrow="Osobní vedení · Praha 3" title="Osobní" accent="trénink." lead="Každý trénink má svůj smysl." description="Chcete začít, zlepšit kondici nebo zesílit? Trénink přizpůsobím vaší úrovni a nastavím jasný postup." image="movement" imageAlt="Suren Najaryan při kontrolovaném cvičení na kladkách.">
       <a className="ip-button ip-blue" href="#zamereni">Vybrat zaměření <ArrowIcon /></a>
+      <span className="ip-mobile-hero-action"><WhatsAppButton>Domluvit trénink</WhatsAppButton></span>
       <Link className="ip-text-link" to="/jak-probiha-spoluprace">Jak začneme <ArrowIcon diagonal /></Link>
     </InteriorHero>
     <section className="ip-container ip-focus" id="zamereni" aria-labelledby="focus-title">
@@ -32,3 +33,4 @@ export function TrainingPage() {
     ]} />
   </main>;
 }
+

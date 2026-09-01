@@ -222,6 +222,7 @@
 .sn-interior .ip-contact-business strong { font-weight: 650; color: #e6eaf1; }
 .sn-interior .ip-not-found { padding-block: 110px 130px; }
 .sn-interior .ip-focus-list article { grid-template-columns: minmax(0, .88fr) minmax(0, 1.12fr); }
+.sn-interior .ip-mobile-hero-action { display: none; }
 @media (max-width: 1100px) {
   .sn-interior .ip-foundations article { padding-inline: 28px; }
   .sn-interior .ip-wide-heading > .ip-body { max-width: 300px; }
@@ -273,19 +274,23 @@
 
   .sn-interior .ip-hero-inner { min-height: 0; }
   .sn-interior .ip-hero-copy { padding: 34px 0 18px; }
+  .sn-interior .ip-hero-copy > .ip-body { display: none; }
   .sn-interior .ip-hero-visual { height: 335px; }
   .sn-interior .ip-equipment-hero .ip-hero-visual { height: 300px; }
   .sn-interior .ip-frame { inset: 14px 10px 24px; }
   .sn-interior .ip-actions { gap: 14px; margin-top: 24px; }
   .sn-interior .ip-actions .ip-text-link { display: none; }
+  .sn-interior.ip-training .ip-actions > .ip-blue { display: none; }
+  .sn-interior .ip-mobile-hero-action { display: block; width: 100%; }
+  .sn-interior .ip-mobile-hero-action > .ip-whatsapp { width: 100%; }
   .sn-interior .ip-button,
   .sn-interior .ip-whatsapp { min-height: 54px; }
 
   .sn-interior .ip-focus,
   .sn-interior .ip-faq { gap: 24px; padding-block: 46px; }
   .sn-interior .ip-focus-list article { gap: 12px; padding: 23px 0; }
-  .sn-interior .ip-tags { margin-top: 11px; }
-  .sn-interior .ip-focus-list p:not(.ip-tags) { margin-bottom: 14px; line-height: 1.65; }
+  .sn-interior .ip-tags,
+  .sn-interior .ip-focus-list article > div:last-child > p { display: none; }
 
   .sn-interior .ip-editorial-photo { height: 310px; }
   .sn-interior .ip-split-copy { padding: 30px 0 42px; }
@@ -293,6 +298,10 @@
   .sn-interior .ip-related { padding-block: 24px; }
   .sn-interior .ip-related-link { padding: 24px 0; }
   .sn-interior .ip-related-link p { margin-top: 10px; }
+
+  .sn-interior.ip-training .ip-story-band,
+  .sn-interior.ip-training .ip-related,
+  .sn-interior.ip-boxing .ip-story-band { display: none; }
 
   .sn-interior .ip-faq-list summary {
     min-height: 64px;
@@ -311,21 +320,32 @@
   .sn-interior .ip-foundations article,
   .sn-interior .ip-foundations article:first-child,
   .sn-interior .ip-foundations article:last-child { padding: 23px 0; }
+  .sn-interior .ip-foundations article > p { display: none; }
 
   .sn-interior .ip-about-story { gap: 22px; padding-block: 46px; }
+  .sn-interior.ip-about .ip-about-story-copy > .ip-body,
+  .sn-interior.ip-about .ip-qualification-heading > .ip-body,
+  .sn-interior.ip-about .ip-credential > p:not(.ip-eyebrow),
+  .sn-interior.ip-about .ip-credential dl { display: none; }
   .sn-interior .ip-qualification-inner { gap: 30px; padding-block: 44px; }
   .sn-interior .ip-credential { padding-left: 22px; }
   .sn-interior .ip-about-place { padding-block: 28px; }
-  .sn-interior .ip-about-place .ip-editorial-photo { height: 300px; }
+  .sn-interior.ip-about .ip-about-place-photo { display: none; }
   .sn-interior .ip-about-place > div { padding: 28px 0 14px; }
 
   .sn-interior .ip-process-options { padding-block: 44px; }
   .sn-interior .ip-paths { gap: 24px; margin-top: 25px; }
-  .sn-interior .ip-paths figure { height: 230px; }
+  .sn-interior.ip-process .ip-process-options .ip-wide-heading > .ip-body,
+  .sn-interior.ip-process .ip-paths article > p,
+  .sn-interior.ip-process .ip-paths figure { display: none; }
 
   .sn-interior .ip-contact-main { gap: 30px; padding-block: 38px 44px; }
+  .sn-interior.ip-contact .ip-contact-intro > .ip-body,
+  .sn-interior.ip-contact .ip-contact-intro > .ip-actions,
+  .sn-interior.ip-contact .ip-direct-contact { display: none; }
   .sn-interior .ip-direct-contact { margin-top: 28px; }
   .sn-interior .ip-message-panel { padding: 24px 18px; }
   .sn-interior .ip-contact-gym { display: none; }
   .sn-interior .ip-contact-location .ip-split-copy { padding: 36px 0 40px; }
 }
+

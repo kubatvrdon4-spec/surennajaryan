@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ResponsiveImage } from "../components/ResponsiveImage";
 import { Seo } from "../components/Seo";
+import { WhatsAppIcon } from "../components/WhatsAppIcon";
 import { siteConfig } from "../config/site";
 
 const whatsappHref = `https://wa.me/${siteConfig.whatsappNumber}?text=${encodeURIComponent(siteConfig.whatsappText)}`;
@@ -110,6 +111,12 @@ export function HomePage() {
             sizes="(max-width: 760px) 100vw, 50vw"
           />
         </div>
+
+        <a className="sn-primary-cta sn-primary-cta-mobile" href={whatsappHref} target="_blank" rel="noreferrer" data-track="hero-whatsapp-mobile">
+          <WhatsAppIcon />
+          <span>Domluvit úvodní konzultaci</span>
+          <b aria-hidden="true">→</b>
+        </a>
       </section>
 
       <section className="sn-services" id="sluzby" aria-labelledby="services-title">
@@ -258,3 +265,4 @@ export function HomePage() {
     </main>
   );
 }
+
