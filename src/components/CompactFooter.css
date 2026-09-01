@@ -17,5 +17,13 @@
 .sn-compact-footer small { margin-top: 12px; color: #53657c; font-size: 10px; }
 
 @media (max-width: 620px) {
-  .sn-compact-footer { min-height: 0; padding: 26px 20px 10px; }
+  .sn-compact-footer {
+    min-height: 0;
+    padding: 22px 20px calc(16px + env(safe-area-inset-bottom));
+    background: #020305;
+  }
+
+  .sn-compact-footer .sn-compact-address { display: none; }
+  .sn-compact-footer p { margin-top: 4px; font-size: 11px; }
+  .sn-compact-footer small { margin-top: 10px; font-size: 9px; }
 }

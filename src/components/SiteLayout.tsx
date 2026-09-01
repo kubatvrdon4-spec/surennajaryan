@@ -25,11 +25,6 @@ export function SiteLayout() {
       <Header />
       <div id="main-content"><Outlet /></div>
       {isHome ? <Footer whatsappHref={whatsappHref} /> : <CompactFooter />}
-      {isHome && (
-        <a className="mobile-sticky-cta" href={whatsappHref} target="_blank" rel="noreferrer" data-track="mobile-sticky-whatsapp">
-          Domluvit trénink <span aria-hidden="true">↗</span>
-        </a>
-      )}
     </>
   );
 }

@@ -181,6 +181,41 @@
   .sn-meal .meal-button-whatsapp { min-height: 60px; padding-inline: 18px; font-size: 12px; }
   .sn-meal .meal-goal-picker > div { gap: 5px; }
 }
+
+/* Keep the mobile sales path short and move the order action above decoration. */
+@media (max-width: 760px) {
+  .sn-meal .meal-container { width: calc(100% - 36px); }
+  .sn-meal .meal-hero-inner { min-height: 0; }
+  .sn-meal .meal-hero-copy { padding-top: 34px; }
+  .sn-meal .meal-hero h1 { font-size: clamp(52px, 14vw, 70px); }
+  .sn-meal .meal-lead { margin-top: 18px; font-size: 20px; }
+  .sn-meal .meal-body { margin-top: 14px; font-size: 14px; line-height: 1.65; }
+  .sn-meal .meal-button { min-height: 54px; margin-top: 22px; }
+  .sn-meal .meal-hero-signature { margin-top: 18px; }
+  .sn-meal .meal-hero-visual { height: 330px; }
+
+  .sn-meal .meal-goals,
+  .sn-meal .meal-faq { gap: 24px; padding-block: 44px; }
+  .sn-meal .meal-goal-options { gap: 18px; }
+  .sn-meal .meal-goal-card { padding: 24px 20px; }
+  .sn-meal .meal-fit-inner { gap: 24px; padding-block: 32px; }
+  .sn-meal .meal-prep-visual { height: min(65vw, 300px); }
+  .sn-meal .meal-fit-points { margin-top: 22px; }
+
+  .sn-meal .meal-faq summary { min-height: 64px; padding-block: 14px; line-height: 1.4; }
+  .sn-meal .meal-faq details > p { margin: 0 36px 20px 0; font-size: 13px; line-height: 1.65; }
+
+  .sn-meal .meal-start { padding: 32px 0 0; }
+  .sn-meal .meal-start-inner { gap: 0; }
+  .sn-meal .meal-coach { display: none; }
+  .sn-meal .meal-start-copy { padding-bottom: 34px; }
+  .sn-meal .meal-start h2 { font-size: clamp(43px, 12vw, 58px); }
+  .sn-meal .meal-goal-picker { margin-top: 24px; }
+  .sn-meal .meal-goal-picker > div { grid-template-columns: 1fr; gap: 7px; }
+  .sn-meal .meal-goal-picker label > span { min-height: 46px; }
+  .sn-meal .meal-button-whatsapp { margin-top: 18px; }
+  .sn-meal .meal-photo-note { padding-block: 16px; font-size: 9px; }
+}
 @media (prefers-reduced-motion: reduce) {
   .sn-meal *, .sn-meal *::before, .sn-meal *::after { transition: none !important; scroll-behavior: auto !important; }
 }

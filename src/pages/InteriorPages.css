@@ -260,3 +260,72 @@
   .sn-interior .ip-equipment-hero .ip-hero-visual { height: 400px; }
   .sn-interior .ip-not-found { padding-block: 65px 85px; }
 }
+
+/* Compact mobile flow: show the decision and WhatsApp action sooner. */
+@media (max-width: 760px) {
+  .sn-interior .ip-container { width: calc(100% - 36px); }
+  .sn-interior h1.ip-display { font-size: clamp(52px, 14vw, 70px); }
+  .sn-interior h2.ip-display { font-size: clamp(38px, 11vw, 46px); }
+  .sn-interior h3.ip-display { font-size: 27px; }
+  .sn-interior .ip-body { margin-top: 15px; font-size: 14px; line-height: 1.65; }
+  .sn-interior .ip-lead { margin-top: 19px; font-size: 19px; }
+  .sn-interior .ip-eyebrow { margin-bottom: 15px; font-size: 9px; }
+
+  .sn-interior .ip-hero-inner { min-height: 0; }
+  .sn-interior .ip-hero-copy { padding: 34px 0 18px; }
+  .sn-interior .ip-hero-visual { height: 335px; }
+  .sn-interior .ip-equipment-hero .ip-hero-visual { height: 300px; }
+  .sn-interior .ip-frame { inset: 14px 10px 24px; }
+  .sn-interior .ip-actions { gap: 14px; margin-top: 24px; }
+  .sn-interior .ip-actions .ip-text-link { display: none; }
+  .sn-interior .ip-button,
+  .sn-interior .ip-whatsapp { min-height: 54px; }
+
+  .sn-interior .ip-focus,
+  .sn-interior .ip-faq { gap: 24px; padding-block: 46px; }
+  .sn-interior .ip-focus-list article { gap: 12px; padding: 23px 0; }
+  .sn-interior .ip-tags { margin-top: 11px; }
+  .sn-interior .ip-focus-list p:not(.ip-tags) { margin-bottom: 14px; line-height: 1.65; }
+
+  .sn-interior .ip-editorial-photo { height: 310px; }
+  .sn-interior .ip-split-copy { padding: 30px 0 42px; }
+  .sn-interior .ip-check-list { margin: 18px 0 24px; }
+  .sn-interior .ip-related { padding-block: 24px; }
+  .sn-interior .ip-related-link { padding: 24px 0; }
+  .sn-interior .ip-related-link p { margin-top: 10px; }
+
+  .sn-interior .ip-faq-list summary {
+    min-height: 64px;
+    gap: 14px;
+    padding: 14px 0;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .sn-interior .ip-faq-list summary > span { width: 26px; height: 26px; }
+  .sn-interior .ip-faq-list details > p { padding: 0 36px 20px 0; font-size: 13px; line-height: 1.65; }
+
+  .sn-interior .ip-wide-heading { margin-bottom: 25px; }
+  .sn-interior .ip-wide-heading > .ip-body { margin-top: 14px; }
+  .sn-interior .ip-box-foundations,
+  .sn-interior .ip-process-steps { padding-block: 46px; }
+  .sn-interior .ip-foundations article,
+  .sn-interior .ip-foundations article:first-child,
+  .sn-interior .ip-foundations article:last-child { padding: 23px 0; }
+
+  .sn-interior .ip-about-story { gap: 22px; padding-block: 46px; }
+  .sn-interior .ip-qualification-inner { gap: 30px; padding-block: 44px; }
+  .sn-interior .ip-credential { padding-left: 22px; }
+  .sn-interior .ip-about-place { padding-block: 28px; }
+  .sn-interior .ip-about-place .ip-editorial-photo { height: 300px; }
+  .sn-interior .ip-about-place > div { padding: 28px 0 14px; }
+
+  .sn-interior .ip-process-options { padding-block: 44px; }
+  .sn-interior .ip-paths { gap: 24px; margin-top: 25px; }
+  .sn-interior .ip-paths figure { height: 230px; }
+
+  .sn-interior .ip-contact-main { gap: 30px; padding-block: 38px 44px; }
+  .sn-interior .ip-direct-contact { margin-top: 28px; }
+  .sn-interior .ip-message-panel { padding: 24px 18px; }
+  .sn-interior .ip-contact-gym { display: none; }
+  .sn-interior .ip-contact-location .ip-split-copy { padding: 36px 0 40px; }
+}

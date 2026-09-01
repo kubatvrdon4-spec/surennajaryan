@@ -4060,3 +4060,163 @@ a.sn-footer-instagram:hover { color: #4d95ff; }
   .site-header { grid-template-columns: 1fr auto; }
   .site-header .menu-toggle { grid-column: 2; justify-self: end; }
 }
+
+/* Mobile conversion pass: shorter pages, one clear WhatsApp path, no sticky bar. */
+@media (max-width: 760px) {
+  body { padding-bottom: 0; }
+  .mobile-sticky-cta { display: none !important; }
+
+  .site-header {
+    min-height: 66px;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    padding-inline: 16px;
+  }
+
+  .site-header .header-cta {
+    grid-column: 1;
+    display: inline-flex;
+    width: fit-content;
+    min-width: 0;
+    min-height: 40px;
+    justify-self: start;
+    padding: 0 13px;
+    font-size: 11px;
+  }
+
+  .site-header .header-cta span { display: inline; }
+  .site-header .menu-toggle { grid-column: 2; width: 40px; height: 40px; }
+
+  .sn-hero {
+    min-height: 650px;
+    grid-template-rows: 315px 335px;
+  }
+
+  .sn-hero-copy {
+    padding: 26px 20px 0;
+    transform: none;
+  }
+
+  .sn-eyebrow { margin-bottom: 12px; }
+  .sn-hero h1 { font-size: clamp(61px, 19vw, 80px); }
+  .sn-tagline { margin-top: 17px; font-size: 15px; }
+
+  .sn-primary-cta {
+    min-height: 50px;
+    margin-top: 18px;
+    padding-inline: 16px;
+    font-size: 11px;
+  }
+
+  .sn-portrait-frame { top: 8px; bottom: 18px; }
+  .sn-hero-photo { inset: -6px 0 0; }
+  .sn-hero-photo img { height: 103%; }
+
+  .sn-services { padding: 46px 18px 58px; }
+  .sn-services-heading { margin: 24px auto 30px; }
+  .sn-services-photo-wrap { height: 335px; margin-bottom: 4px; }
+
+  .sn-service,
+  .sn-service-one,
+  .sn-service-two,
+  .sn-service-three,
+  .sn-service-four {
+    min-height: 0;
+    padding: 21px 2px 22px;
+  }
+
+  .sn-service h3 { margin-bottom: 7px; font-size: clamp(27px, 8.5vw, 35px); }
+  .sn-service p { font-size: 12px; line-height: 1.52; }
+  .sn-service > a { min-width: 118px; min-height: 38px; }
+
+  .sn-service.sn-service-meal {
+    gap: 15px;
+    margin-top: 0;
+    padding: 22px 2px 0;
+  }
+
+  .sn-process-photo { height: 310px; }
+  .sn-process-shade {
+    background:
+      linear-gradient(180deg, rgba(2, 3, 5, 0.34) 0%, #020305 300px, #020305 100%),
+      linear-gradient(90deg, #020305 0%, rgba(2, 3, 5, 0.25) 100%);
+  }
+
+  .sn-process-content { padding: 42px 20px 52px; }
+  .sn-process-content > h2 { font-size: clamp(62px, 19vw, 80px); }
+
+  .sn-process-flow {
+    gap: 26px;
+    margin-top: 36px;
+    padding-left: 0;
+  }
+
+  .sn-process-flow::before,
+  .sn-process-node { display: none; }
+
+  .sn-process-step h3 { max-width: 310px; font-size: clamp(27px, 8vw, 33px); }
+  .sn-process-step p { margin-top: 8px; font-size: 13px; line-height: 1.55; }
+  .sn-process-cta { gap: 15px; margin-top: 34px; }
+  .sn-process-cta > p { font-size: 14px; }
+  .sn-process-cta > a { min-height: 54px; }
+
+  .sn-home .sn-faq {
+    gap: 0;
+    padding: 52px 20px 58px;
+  }
+
+  .sn-home .sn-faq-intro {
+    padding: 0 0 28px;
+    border-bottom: 0;
+  }
+
+  .sn-home .sn-faq-intro h2 { font-size: clamp(54px, 16vw, 70px); }
+  .sn-home .sn-faq-intro > span { margin-top: 18px; font-size: 13px; }
+  .sn-faq-word { display: none; }
+
+  .sn-home .sn-faq-list { margin: 0; }
+  .sn-home .sn-faq-item summary {
+    min-height: 68px;
+    gap: 14px;
+    padding: 14px 0;
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  .sn-home .sn-faq-item summary > span { flex: 1 1 auto; min-width: 0; }
+  .sn-home .sn-faq-item summary i { flex: 0 0 24px; }
+  .sn-home .sn-faq-item > p { margin: -2px 34px 20px 0; line-height: 1.6; }
+  .sn-home .sn-faq-more { min-height: 50px; margin-top: 18px; padding-inline: 14px; font-size: 10px; }
+
+  .sn-footer-terminal { min-height: 0; grid-template-columns: 1fr; }
+  .sn-footer-pitch,
+  .sn-footer-visual { display: none; }
+
+  .sn-footer-contact-panel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+    padding: 24px 20px calc(18px + env(safe-area-inset-bottom));
+    text-align: center;
+  }
+
+  .sn-footer-contact-panel > a,
+  .sn-footer-contact-panel > div {
+    min-height: 0;
+    display: block;
+    padding: 5px 0;
+    border: 0;
+    font-size: 12px;
+  }
+
+  .sn-footer-contact-panel svg,
+  .sn-footer-contact-panel > div:last-of-type { display: none; }
+
+  .sn-footer-contact-panel > p {
+    margin: 11px 0 0;
+    color: #65758a;
+    font-size: 9px;
+    line-height: 1.45;
+  }
+}
