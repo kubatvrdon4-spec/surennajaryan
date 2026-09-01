@@ -1,0 +1,27 @@
+export const siteConfig = {
+  name: "Suren Najaryan",
+  role: "Osobní fitness trenér",
+  location: "Form Factory Vinohradská",
+  locationDetail: "Praha 3 — Vinohrady",
+  phone: "+420 608 662 088",
+  phoneHref: "+420608662088",
+  whatsappNumber: "420608662088",
+  instagramUrl: "",
+  ico: "07596600",
+  email: "suren@post.cz",
+  nav: [
+    { label: "Jídelníček", to: "/jidelnicek" },
+    { label: "Moje služby", to: "/osobni-treninky" },
+    { label: "Box a sebeobrana", to: "/box-a-sebeobrana" },
+    { label: "O mně", to: "/o-mne" },
+    { label: "Spolupráce", to: "/jak-probiha-spoluprace" },
+    { label: "Kontakt", to: "/kontakt" },
+  ],
+  goals: [
+    "Zhubnout a vytvarovat postavu",
+    "Nabrat svaly a sílu",
+    "Zlepšit kondici a pohyb",
+    "Naučit se box nebo sebeobranu",
+  ],
+  whatsappText: "Dobrý den, Surene, mám zájem o osobní trénink. Rád/a bych se krátce domluvil/a na svém cíli a možnostech spolupráce.",
+} as const;

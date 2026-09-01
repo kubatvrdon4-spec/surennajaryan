@@ -1,0 +1,21 @@
+.sn-compact-footer {
+  display: flex;
+  min-height: 0;
+  padding: 30px 24px 12px;
+  align-items: center;
+  flex-direction: column;
+  color: #8495ab;
+  background: radial-gradient(circle at 50% 0, #061120 0, #020305 38%);
+  border-top: 1px solid #153255;
+  text-align: center;
+}
+
+.sn-compact-phone { color: #fff; font-size: 14px; font-weight: 750; }
+.sn-compact-phone:hover { color: #5aa3ff; }
+.sn-compact-footer p { margin: 5px 0 0; font-size: 12px; line-height: 1.4; }
+.sn-compact-footer .sn-compact-location { margin-top: 2px; }
+.sn-compact-footer small { margin-top: 12px; color: #53657c; font-size: 10px; }
+
+@media (max-width: 620px) {
+  .sn-compact-footer { min-height: 0; padding: 26px 20px 10px; }
+}
